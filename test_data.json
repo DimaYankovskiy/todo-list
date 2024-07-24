@@ -1,0 +1,92 @@
+[
+  {
+    "model": "todo_list_app.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Work"
+    }
+  },
+  {
+    "model": "todo_list_app.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Personal"
+    }
+  },
+  {
+    "model": "todo_list_app.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Urgent"
+    }
+  },
+  {
+    "model": "todo_list_app.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Home"
+    }
+  },
+  {
+    "model": "todo_list_app.tag",
+    "pk": 5,
+    "fields": {
+      "name": "Shopping"
+    }
+  },
+  {
+    "model": "todo_list_app.task",
+    "pk": 1,
+    "fields": {
+      "content": "Complete Django project",
+      "created_at": "2024-07-23T10:00:00Z",
+      "deadline": "2024-07-30T10:00:00Z",
+      "is_done": false,
+      "tags": [1, 3]
+    }
+  },
+  {
+    "model": "todo_list_app.task",
+    "pk": 2,
+    "fields": {
+      "content": "Buy groceries",
+      "created_at": "2024-07-23T12:00:00Z",
+      "deadline": "2024-07-24T18:00:00Z",
+      "is_done": false,
+      "tags": [2, 5]
+    }
+  },
+  {
+    "model": "todo_list_app.task",
+    "pk": 3,
+    "fields": {
+      "content": "Read a book",
+      "created_at": "2024-07-23T15:00:00Z",
+      "deadline": null,
+      "is_done": false,
+      "tags": [2]
+    }
+  },
+  {
+    "model": "todo_list_app.task",
+    "pk": 4,
+    "fields": {
+      "content": "Clean the house",
+      "created_at": "2024-07-23T09:00:00Z",
+      "deadline": null,
+      "is_done": true,
+      "tags": [4]
+    }
+  },
+  {
+    "model": "todo_list_app.task",
+    "pk": 5,
+    "fields": {
+      "content": "Prepare presentation",
+      "created_at": "2024-07-22T11:00:00Z",
+      "deadline": "2024-07-25T09:00:00Z",
+      "is_done": false,
+      "tags": [1]
+    }
+  }
+]
