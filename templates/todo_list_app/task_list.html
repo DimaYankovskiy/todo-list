@@ -2,6 +2,7 @@
 
 {% block content %}
   <h1>Tasks:</h1>
+  <a href="{% url 'todo_list_app:task-create' %}" class="btn btn-primary">New task</a>
   {% if task_list %}
     <div>
       {% for task in task_list %}
@@ -15,6 +16,10 @@
           {{ task.is_done }}
           <br>
           Tags: {% for tag in task.tags.all %}{{ tag.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+          <p>
+            <a href="{% url 'todo_list_app:task-update' pk=task.id %}">Update</a>
+            <a href="{% url 'todo_list_app:task-delete' pk=task.id %}">Delete</a>
+          </p>>
         </div>
       {% endfor %}
     </div>
