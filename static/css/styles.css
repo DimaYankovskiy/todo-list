@@ -4,5 +4,11 @@ body {
 
 .task {
     margin: 10px;
-    background: #79aec8;
+    padding: 10px;
+    background: #bababa;
+    border-radius: 10px;
+}
+
+.task a .btn{
+    margin-top: 10px;
 }
